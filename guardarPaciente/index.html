@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Paciente - Medical</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/img/logo.png" alt="Logotipo de la Clínica">
+            <h1>Medical</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="agregar_paciente.html">Agregar Paciente</a></li>
+                <li><a href="#medicos">Médicos</a></li>
+                <li><a href="#citas">Citas</a></li>
+                <li><a href="#consultas">Consultas</a></li>
+                <li><a href="#facturas">Facturas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="agregar_paciente">
+            <h2>Agregar Paciente</h2>
+            <form action="guardar_paciente.php" method="POST" id="form-agregar-paciente">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+                
+                <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                
+                <label for="genero">Género:</label>
+                <select id="genero" name="genero" required>
+                    <option value="M">Masculino</option>
+                    <option value="F">Femenino</option>
+                </select>
+                
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+                
+                <label for="telefono">Teléfono:</label>
+                <input type="text" id="telefono" name="telefono" required>
+                
+                <label for="correo_electronico">Correo Electrónico:</label>
+                <input type="email" id="correo_electronico" name="correo_electronico" required>
+                
+                <button type="submit">Guardar Paciente</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Clínica Salud. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
