@@ -15,7 +15,7 @@ Este es un sistema de gestión para una clínica médica pequeña. Incluye funci
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/tu_usuario/tu_repositorio.git
+git clone https://github.com/RicardoSync/softwareClinica.git
 cd tu_repositorio
 
 
